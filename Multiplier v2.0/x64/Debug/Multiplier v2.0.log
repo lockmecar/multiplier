@@ -1,11 +1,1 @@
-﻿  Multiplier v2.0.cpp
-C:\Users\User\source\repos\Multiplier v2.0\Multiplier v2.0\Multiplier v2.0.cpp(41,29): warning C4244: инициализация: преобразование "double" в "unsigned int", возможна потеря данных
-C:\Users\User\source\repos\Multiplier v2.0\Multiplier v2.0\Multiplier v2.0.cpp(153,34): warning C4244: аргумент: преобразование "unsigned __int64" в "unsigned int", возможна потеря данных
-C:\Users\User\source\repos\Multiplier v2.0\Multiplier v2.0\Multiplier v2.0.cpp(160,18): warning C4244: =: преобразование "unsigned __int64" в "unsigned int", возможна потеря данных
-C:\Users\User\source\repos\Multiplier v2.0\Multiplier v2.0\Multiplier v2.0.cpp(191,37): warning C4244: -=: преобразование "double" в "int", возможна потеря данных
-C:\Users\User\source\repos\Multiplier v2.0\Multiplier v2.0\Multiplier v2.0.cpp(191,76): warning C4244: -=: преобразование "double" в "int", возможна потеря данных
-C:\Users\User\source\repos\Multiplier v2.0\Multiplier v2.0\Multiplier v2.0.cpp(195,19): warning C4244: return: преобразование "double" в "int", возможна потеря данных
-C:\Users\User\source\repos\Multiplier v2.0\Multiplier v2.0\Multiplier v2.0.cpp(245,20): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
-C:\Users\User\source\repos\Multiplier v2.0\Multiplier v2.0\Multiplier v2.0.cpp(253,20): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
-C:\Users\User\source\repos\Multiplier v2.0\Multiplier v2.0\Multiplier v2.0.cpp(275,43): warning C4244: =: преобразование "double" в "int", возможна потеря данных
-  Multiplier v2.0.vcxproj -> C:\Users\User\source\repos\Multiplier v2.0\x64\Debug\Multiplier v2.0.exe
+﻿  Multiplier v2.0.vcxproj -> C:\Users\User\source\repos\Multiplier v2.0\x64\Debug\Multiplier v2.0.exe

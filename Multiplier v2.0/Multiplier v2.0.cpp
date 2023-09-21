@@ -151,14 +151,8 @@ unsigned int manMult(unsigned int manA, unsigned int manB, bool &addExp, bool& r
     buf &= (0b00111111111111111111111111111111111111111111111111111111ul >> (56 - (manLength + 1) * 2));
 
     if (info) manMultPrint(manA, bufB, buf, addExp, rounding);
-    if (((buf & (0b1000000000000000000000000000 >> (28 - (manLength + 1)))) && (buf & (0b0100000000000000000000000000 >> (28 - (manLength + 1))))) || ((buf & 0b0100000000000000000000000000 >> (28 - (manLength + 1)))) && (buf & (0b0011111111111111111111111111 >> (28 - (manLength + 1)))))
-    {
-        buf += (0b1000000000000000000000000000 >> (28 - (manLength + 1)));
-        rounding = 1;
-    }
 
-    result = buf >> manLength;
-    if (info) 
+    if (info)
     {
         cout << "Normalised: ";
         bitset<60> manbitCut(buf);
@@ -173,6 +167,18 @@ unsigned int manMult(unsigned int manA, unsigned int manB, bool &addExp, bool& r
             cout << manbitCut[i];
         }
         cout << endl;
+    }
+
+    if (((buf & (0b1000000000000000000000000000 >> (28 - (manLength + 1)))) && (buf & (0b0100000000000000000000000000 >> (28 - (manLength + 1))))) || ((buf & 0b0100000000000000000000000000 >> (28 - (manLength + 1)))) && (buf & (0b0011111111111111111111111111 >> (28 - (manLength + 1)))))
+    {
+        buf += (0b1000000000000000000000000000 >> (28 - (manLength + 1)));
+        rounding = 1;
+    }
+
+    result = buf >> manLength;
+    if (info) 
+    {
+        
         cout << "Rounded: ";
         helpManPrint(result);
         cout << "\tOne bit added: " << boolalpha << rounding << noboolalpha << endl;
